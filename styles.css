@@ -1,0 +1,101 @@
+/* Log11 public site — shared stylesheet.
+ * One file for every page. Dark mode follows the system. Mobile-first,
+ * no JavaScript, no web fonts, no third-party requests of any kind — the
+ * site that hosts a privacy policy should not itself track its readers.
+ */
+
+:root {
+  --bg: #ffffff;
+  --fg: #16181d;
+  --muted: #646a75;
+  --accent: #1e7aee;            /* matches the app's accent colour */
+  --accent-soft: rgba(30, 122, 238, 0.10);
+  --border: #e3e6ea;
+  --card: #f6f7f9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d0f13;
+    --fg: #eceef2;
+    --muted: #9aa1ad;
+    --accent: #4fa5ff;
+    --accent-soft: rgba(79, 165, 255, 0.14);
+    --border: #262a31;
+    --card: #15181d;
+  }
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.62 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  padding: 32px 16px 96px;
+  -webkit-text-size-adjust: 100%;
+}
+.container { max-width: 760px; margin: 0 auto; }
+
+/* ───── Header / nav ─────────────────────────────────────────────── */
+header.site {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 18px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+header.site .logo { width: 36px; height: 36px; border-radius: 9px; display: block; }
+header.site .brand { font-size: 18px; margin: 0; font-weight: 600; }
+header.site .brand a { color: inherit; text-decoration: none; }
+header.site nav { margin-left: auto; display: flex; gap: 18px; flex-wrap: wrap; }
+header.site nav a { color: var(--muted); text-decoration: none; font-size: 15px; }
+header.site nav a:hover, header.site nav a[aria-current="page"] { color: var(--accent); }
+
+/* ───── Typography ───────────────────────────────────────────────── */
+h1.page-title { font-size: 30px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.01em; }
+h2 { font-size: 20px; margin: 36px 0 10px; line-height: 1.3; }
+h3 { font-size: 16.5px; margin: 24px 0 6px; }
+p, li { color: var(--fg); }
+p { margin: 0 0 14px; }
+ul, ol { margin: 0 0 14px; padding-left: 22px; }
+li { margin-bottom: 6px; }
+a { color: var(--accent); }
+strong { font-weight: 600; }
+.meta { color: var(--muted); font-size: 14.5px; margin-bottom: 22px; }
+.lede { font-size: 17.5px; color: var(--fg); }
+code { background: var(--card); border-radius: 5px; padding: 1px 5px; font-size: 0.92em; }
+
+.summary {
+  background: var(--accent-soft);
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin: 0 0 8px;
+}
+.summary p:last-child { margin-bottom: 0; }
+
+table { border-collapse: collapse; width: 100%; margin: 0 0 16px; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 9px 10px; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 600; font-size: 13.5px; text-transform: uppercase; letter-spacing: 0.03em; }
+
+/* ───── Landing page ─────────────────────────────────────────────── */
+.hero { text-align: center; padding: 28px 0 8px; }
+.hero img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18); }
+.hero h1 { font-size: 38px; margin: 20px 0 6px; letter-spacing: -0.02em; }
+.hero p { color: var(--muted); font-size: 18px; max-width: 560px; margin: 0 auto 8px; }
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 34px 0 10px; }
+.feature { background: var(--card); border-radius: 16px; padding: 18px; }
+.feature h3 { margin: 0 0 6px; font-size: 16px; }
+.feature p { margin: 0; color: var(--muted); font-size: 15px; }
+
+/* ───── Footer ───────────────────────────────────────────────────── */
+footer.site {
+  border-top: 1px solid var(--border);
+  margin-top: 56px;
+  padding-top: 18px;
+  color: var(--muted);
+  font-size: 14px;
+}
+footer.site a { color: var(--muted); }

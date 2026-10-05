@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1e7aee">
+  <meta name="description" content="Support for the Log11 pilot logbook: how to get help, answers to common questions, and how to delete your data.">
+  <title>Support — Log11</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="icon" type="image/png" href="../../icon.png">
+  <link rel="apple-touch-icon" href="../../icon.png">
+</head>
+<body>
+  <div class="container">
+    <header class="site">
+      <img class="logo" src="../../icon.png" alt="">
+      <p class="brand"><a href="../../">Log11</a></p>
+      <nav>
+        <a href="../privacy-policy/">Privacy</a>
+        <a href="../terms-of-use/">Terms</a>
+        <a href="../support/" aria-current="page">Support</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="page-title">Support</h1>
+      <p class="meta">Log11 for iPhone, iPad and Mac</p>
+
+      <div class="summary">
+        <p><strong>Email:</strong> <a href="mailto:NAV-INT-LLC@pm.me?subject=Log11%20support">NAV-INT-LLC@pm.me</a><br>
+        <strong>Developer:</strong> Capt. Navneet Reddy (NAV-INT LLC)</p>
+      </div>
+
+      <p>The fastest way to get help is to email the address above with:</p>
+      <ol>
+        <li>The Log11 version and build, shown in <strong>Settings → About</strong>.</li>
+        <li>Your device and its iOS, iPadOS or macOS version.</li>
+        <li>What you did, what you expected and what happened instead.</li>
+        <li>A screenshot if it helps. Please cover anything you would rather not share — your logbook never needs to be sent in full.</li>
+      </ol>
+      <p>Most replies arrive within 2–3 business days.</p>
+
+      <h2>Your logbook</h2>
+
+      <h3>Is my logbook backed up?</h3>
+      <p>In two independent ways. If you are signed in to iCloud, Log11 keeps your logbook in sync across your devices. Separately, <strong>Settings → Sync and backup → Back up now</strong> writes a dated <code>.zip</code> file to the Log11 folder in your iCloud Drive, which you can copy anywhere. A backup does not depend on sync, on a subscription or on Log11 itself: inside it is a plain JSON file.</p>
+
+      <h3>How do I restore a backup?</h3>
+      <p><strong>Settings → Sync and backup</strong>, then pick one of the listed backups or choose <strong>Restore from a file…</strong>. Log11 shows what the backup contains before anything changes. <em>Merge</em> adds and updates entries without deleting any; <em>Replace</em> makes the logbook match the backup exactly.</p>
+
+      <h3>My flights are not appearing on my other device</h3>
+      <ul>
+        <li>Check that both devices are signed in to the same Apple Account and that iCloud is on for Log11 (Settings → your name → iCloud → Apps Using iCloud).</li>
+        <li>Open Log11 on both devices with a network connection. The sync status is shown in <strong>Settings → Sync and backup</strong>.</li>
+        <li>iCloud decides when to deliver changes; a few minutes' delay is normal, especially for a large first sync.</li>
+      </ul>
+
+      <h3>Why can't I edit or delete an entry?</h3>
+      <p>An entry that carries a signature is locked, so that what was signed cannot change unnoticed. Open the entry and choose <strong>Void signature to edit…</strong>. The signature is then removed and the entry needs signing again.</p>
+
+      <h3>How do I move my existing logbook into Log11?</h3>
+      <p><strong>Import → Choose a CSV or PDF…</strong>. Exports from most logbook apps and spreadsheets are recognised by their column headings, and you can say which column is which if a heading is unfamiliar. Log11 then shows a preview with anything it could not read, and nothing is added until you confirm. Entries already in your logbook are recognised and left alone.</p>
+
+      <h3>Log11 says my logbook could not be opened</h3>
+      <p>Choose <strong>Try Again</strong> first — this can happen once after an update, or if the device had just restarted. If it persists, <strong>Start a new logbook</strong> from one of the listed backups. The file that could not be read is moved to a folder named "Damaged", not deleted, and if iCloud sync is on your flights download again by themselves. Email support if you would like help recovering the original file.</p>
+
+      <h2>Regulations, recency and limits</h2>
+
+      <h3>The recency or limit figures do not match my operator's</h3>
+      <p>Log11 applies the general rules of the authority selected in <strong>Settings → Regulatory profile</strong>, calculated from what is in your logbook. It cannot know your operator's approved scheme, exemptions, standby or rest. Check the entries for the period first, then treat your operator's system and the regulation itself as authoritative. If you believe a rule is encoded incorrectly, please email the rule, the figure Log11 shows and the regulation reference — corrections are a priority.</p>
+
+      <h3>Will my authority accept an electronic logbook or signature?</h3>
+      <p>That depends on your authority, your operator and what the record is for. Log11 prints in the layouts authorities publish and shows when a signed entry has been altered, but acceptance is the authority's decision. Ask before relying on it for a licence application or a check.</p>
+
+      <h2>Roster and calendar import</h2>
+
+      <h3>My airline is not in the list</h3>
+      <p>Log11 lists an airline only once a connection to its crew portal has been built and verified with a real roster. You can try the import with <strong>Log11 Demo Airline</strong>, which needs no sign-in and returns a sample roster, and you can always bring flights in from a file or your calendar. To ask for an airline, email support with its name.</p>
+
+      <h3>I tried the demo airline. How do I remove its flights?</h3>
+      <p><strong>Import → Remove sample flights</strong>. The demo airline's flights are invented; they count towards your totals until you remove them.</p>
+
+      <h3>Where does my airline password go?</h3>
+      <p>Only to your airline's own crew portal, directly from your device. It is stored in the device Keychain, on that device only — never in iCloud, in a backup or on any Log11 system. To remove it, open the airline in <strong>Import</strong> and choose <strong>Sign out</strong>.</p>
+
+      <h3>Imported flights look wrong</h3>
+      <p>Log11 imports what your airline's portal reports. Compare with the portal in a browser first. If the portal is right and Log11 is wrong, email support with the date and sector (no password, please).</p>
+
+      <h2>Log11 Pro</h2>
+
+      <h3>What is free and what is Pro?</h3>
+      <p>Logging, your logbook and totals, recency, iCloud sync, backup and restore, importing a logbook file, and a PDF export in the general ICAO layout are free. <strong>Log11 Pro</strong> adds airline roster import, calendar import, flight- and duty-limit tracking, and PDF exports in authority layouts. One subscription covers iPhone, iPad and Mac.</p>
+
+      <h3>I subscribed but Pro is not unlocked</h3>
+      <p><strong>Settings → Log11 Pro → Restore purchases</strong>. Make sure the device uses the same Apple Account that bought the subscription.</p>
+
+      <h3>How do I cancel, or get a refund?</h3>
+      <p>Cancel in Settings → your name → Subscriptions → Log11 Pro. Refunds are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. Apple processes all billing; the Developer cannot cancel or refund on your behalf.</p>
+
+      <h3>What happens to my logbook if I stop subscribing?</h3>
+      <p>Nothing. Every entry stays, and you can still view, edit, sync, back up, restore and export in the general layout.</p>
+
+      <h2>Deleting your data</h2>
+      <ul>
+        <li><strong>Everything, in one step:</strong> Settings → Erase all Log11 data. It removes your logbook and profile from the device and, if iCloud sync is on, from iCloud and your other devices, along with any saved airline sign-in. You are offered a backup first.</li>
+        <li><strong>Backups:</strong> these are your own files and are not erased. Delete them from the Log11 folder in iCloud Drive.</li>
+        <li><strong>One airline's saved sign-in only:</strong> Import → the airline → Sign out.</li>
+        <li><strong>The app itself:</strong> delete it as usual. On a Mac, also delete the Log11 folder in <code>~/Library/Containers</code>.</li>
+        <li><strong>Subscription:</strong> Settings → your name → Subscriptions.</li>
+      </ul>
+      <p>There is no Log11 account to close and no data held by the Developer to request. See the <a href="../privacy-policy/">Privacy Policy</a>.</p>
+
+      <h2>Disclaimer</h2>
+      <p>Log11 is an independent product, not affiliated with, endorsed by or supported by any aviation authority, airline, crew-portal vendor or Apple. Regulatory figures are provided to help you keep track and are not legal or operational advice. You remain responsible for the accuracy of your logbook. Log11 is provided "as is", without warranty of any kind — see the <a href="../terms-of-use/">Terms of Use</a>.</p>
+    </main>
+
+    <footer class="site">
+      <p>© 2026 NAV-INT LLC · <a href="../privacy-policy/">Privacy</a> · <a href="../terms-of-use/">Terms</a> · <a href="../support/">Support</a></p>
+    </footer>
+  </div>
+</body>
+</html>
