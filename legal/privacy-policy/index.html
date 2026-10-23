@@ -24,10 +24,10 @@
 
     <main>
       <h1 class="page-title">Privacy Policy</h1>
-      <p class="meta">Effective date: 6 October 2026 · Version 1.0 · Applies to Log11 for iPhone, iPad and Mac</p>
+      <p class="meta">Effective date: 23 October 2026 · Version 1.1 · Applies to Log11 for iPhone, iPad, Mac and Apple Watch</p>
 
       <div class="summary">
-        <p><strong>The short version.</strong> Log11 is a logbook that lives on your devices and in your own iCloud account. There is no Log11 account and no Log11 server. The Developer cannot see your flights, your licence details, your signature, your roster or your airline password. The app contains no analytics, no advertising and no tracking.</p>
+        <p><strong>The short version.</strong> Log11 is a logbook that lives on your devices and in your own iCloud account. There is no Log11 account and no Log11 server. The Developer cannot see your flights, your licence details, your documents, your signature, your roster or your airline password. The app contains no analytics, no advertising and no tracking.</p>
       </div>
 
       <h2>1. Who runs Log11</h2>
@@ -45,25 +45,35 @@
         <li><strong>Your pilot profile:</strong> name, licence title and number, licensing authority, role, medical class and examination date, dates of recurrent checks, and — only if you enter it — your date of birth, which is used solely to calculate age-dependent medical validity.</li>
         <li><strong>Signatures:</strong> your own handwritten signature, and any instructor signatures captured on your device, stored as pen strokes with the entries they certify, together with the signer's name, certificate number, the date and the kind of device used.</li>
         <li><strong>Roster-portal credentials</strong> (only if you use roster import): your crew ID and password, kept in the device Keychain with the "this device only" protection class. They are not included in iCloud sync, in backups made by Log11, or in iCloud Keychain.</li>
+        <li><strong>Documents</strong> you add: licences, medical certificates, passports, visas, crew IDs, airport passes and the like, with their numbers, dates, notes and any photos of them you take or choose. Photos are re-encoded on the device without location or camera details.</li>
+        <li><strong>A summary for widgets and Apple Watch:</strong> your next flight, your currency and your flight and duty limits, kept on the device where Log11's widgets can read it, and sent from your iPhone directly to your own Apple Watch if you have one.</li>
+        <li><strong>A Spotlight index</strong> of your entries, kept by the device so that you can search for them. Settings → Show entries in Spotlight turns it off and removes it.</li>
         <li><strong>Preferences</strong> and the cached state of your subscription.</li>
       </ul>
       <p>This data is protected by the device's own encryption (Data Protection) whenever the device is locked.</p>
 
       <h3>2.2 In your iCloud account</h3>
       <ul>
-        <li><strong>Sync.</strong> If you are signed in to iCloud, your logbook and profile are synchronised between your own devices through the <em>private database</em> of your iCloud account (Apple CloudKit). Only you can read that database. The Developer has no access to its contents. Licence and certificate numbers, date of birth and signature strokes are additionally stored in CloudKit's encrypted fields.</li>
-        <li><strong>Backups.</strong> When you create a backup, Log11 writes a <code>.zip</code> file to the Log11 folder in your iCloud Drive (or to the app's folder on the device if iCloud Drive is unavailable). The file is yours: you can see it in the Files app, copy it or delete it.</li>
+        <li><strong>Sync.</strong> If you are signed in to iCloud, your logbook, profile and documents are synchronised between your own devices through the <em>private database</em> of your iCloud account (Apple CloudKit). Only you can read that database. The Developer has no access to its contents. Licence, certificate and document numbers, date of birth and signature strokes are additionally stored in CloudKit's encrypted fields.</li>
+        <li><strong>Backups.</strong> When you create a backup, Log11 writes a <code>.zip</code> file to the Log11 folder in your iCloud Drive (or to the app's folder on the device if iCloud Drive is unavailable). The file is yours: you can see it in the Files app, copy it or delete it. If you turn on the weekly spreadsheet copy, Log11 also writes your logbook as CSV and Excel files to Log11 › Spreadsheet in your iCloud Drive.</li>
       </ul>
       <p>Apple's handling of iCloud data is described in <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
 
       <h3>2.3 Your airline's crew portal (roster import, optional)</h3>
-      <p>If you choose to import your roster, Log11 signs in to your airline's crew portal from your device, using the credentials you enter, over an encrypted (HTTPS) connection, and reads your own roster and flown-sector report. The credentials and the downloaded data go only between your device and that portal. Nothing is relayed through, copied to or visible to the Developer. Your use of the portal remains subject to your airline's own terms and privacy notice.</p>
+      <p>If you choose to import your roster, Log11 signs in to your airline's crew portal from your device, using the credentials you enter, over an encrypted (HTTPS) connection, and reads your own roster and flown-sector report. The credentials and the downloaded data go only between your device and that portal. Nothing is relayed through, copied to or visible to the Developer. If you turn on <em>Keep my roster current</em>, Log11 signs in the same way about once a day, in the background, and tells you on the device when your roster changes. Your use of the portal remains subject to your airline's own terms and privacy notice.</p>
 
       <h3>2.4 Calendar (optional)</h3>
       <p>If you ask Log11 to find flights in your calendar, it requests access to your calendars and reads events on the device to recognise flights. Calendar data is not uploaded anywhere, and Log11 never writes to your calendar. You can withdraw the permission at any time in Settings → Privacy &amp; Security → Calendars.</p>
 
       <h3>2.5 Files you import or export</h3>
-      <p>Logbook files you choose to import (CSV or PDF) are read on the device. PDFs and backups you export are saved only where you choose to save them.</p>
+      <p>Logbook files you choose to import (CSV or PDF) and roster files (PDF, screenshots and calendar files) are read on the device. PDFs, spreadsheets, reports, Career Passport images and backups you export are saved or shared only where you choose.</p>
+
+      <h3>2.6 Photos, the camera, questions and Siri (optional)</h3>
+      <p>When you scan block and flight times or read a roster from a picture, Log11 reads the photo you take or choose on the device, with Apple's text recognition and, where your device has Apple Intelligence, Apple's on-device model. That photo is not kept. Log11 sees only the photos you take or pick for it, never the rest of your photo library.</p>
+      <p>A question you ask your logbook is read on the device in the same way and answered from your own entries; it is not stored. If you ask through Siri or Shortcuts, Siri handles the request under Apple's own privacy terms and Log11 answers it on the device.</p>
+
+      <h3>2.7 Notifications (optional)</h3>
+      <p>Reminders before a document expires and alerts about roster changes are scheduled on the device. They do not pass through any Developer server.</p>
 
       <h2>3. What Log11 does <em>not</em> collect</h2>
       <ul>
@@ -71,7 +81,7 @@
         <li>No advertising, no advertising identifiers and no third-party SDKs.</li>
         <li>No account, email address or phone number.</li>
         <li>No location tracking. Airports are taken from what you log, not from where your device is.</li>
-        <li>No access to contacts, photos, microphone, camera or health data.</li>
+        <li>No access to contacts, microphone or health data, and none to your photo library: Log11 sees only a photo you take or pick for it (2.6).</li>
         <li>No copy of your logbook, signature, credentials or roster on any Developer-operated system — there is none.</li>
       </ul>
       <p>In App Store terms, Log11's privacy label is <strong>"Data Not Collected"</strong>.</p>
@@ -83,8 +93,8 @@
       <p>Because your data stays with you, you control it directly:</p>
       <ul>
         <li><strong>Edit or delete entries</strong> in the app at any time.</li>
-        <li><strong>Export</strong> your whole logbook at any time: as a backup file (Settings → Sync and backup) or as a PDF (Logbook → Export PDF).</li>
-        <li><strong>Erase everything:</strong> Settings → Erase all Log11 data. This deletes your logbook and profile from the device and, if iCloud sync is on, from iCloud and your other devices, and removes any saved airline sign-in. Log11 offers to write a backup first.</li>
+        <li><strong>Export</strong> your whole logbook at any time: as a backup file (Settings → Sync and backup), or as a PDF, an Excel workbook or a CSV file (Logbook → Export logbook).</li>
+        <li><strong>Erase everything:</strong> Settings → Erase all Log11 data. This deletes your logbook, profile and documents from the device and, if iCloud sync is on, from iCloud and your other devices, and removes any saved airline sign-in. Log11 offers to write a backup first.</li>
         <li><strong>Remove the app as well:</strong> on an iPhone or iPad, delete the app. On a Mac, delete the app and then the Log11 folder in <code>~/Library/Containers</code>.</li>
         <li><strong>Remove synced data from iCloud without the app:</strong> Settings → your name → iCloud → Manage Account Storage → Log11 → Delete Data.</li>
         <li><strong>Remove backups:</strong> delete the files from the Log11 folder in iCloud Drive.</li>
